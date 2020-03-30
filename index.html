@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Animal Love</title>
+    <script src="myScript.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-header">
+        <a href="/" class="brand-logo">
+            <img src="logo.png" alt="brandlogo" style="width: 80%;">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Biz Kimiz?</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">Sahiplendirme</a></li>
+                <li><a href="">Veterinerler</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <div class="carouselPart">     
+        <div>
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="dog1.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="next-slide">
+                                  <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="dog2.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="dog3.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="slogan">
+                <p>Satın Alma,</p>
+                <p class='slider'>
+                  <span class='active'>"Sahiplen"</span>
+                  <span class='next'>"Sev"</span>
+                  <span>"Koru"</span>
+                  <span>"İlgilen"</span>
+                </p>
+            </div>
+                
+    </div>      
+                
+
+                <div class="hakkımızda">
+                    <div class="hakkımızda_heading">
+                        <h1 class="hakkımızda_star">Hakkımızda</h1>
+                        <p>
+                            İstanbul Bilgi Üniversitesi İşletme Enformatiği bölümü son sınıf öğrencileriyiz. 
+                            Hayvanlara yardım amaçlı kurulmuş, kar gütmeyen bir web sayfası kurmak istedik. 
+                            Web sitemiz aracılığıyla yaralı, hasta veya sahipsiz hayvanlara yardım etmek, tedavilerini sağlamak ve onlara yuva bulmayı amaçlıyoruz. 
+                            Ülkemizde hayvanlara gerekli yardımların günden güne artması ve insanların gittikçe bilinçlenmesinden dolayı ve bu bilinçlenmeye katkı sağlamak amacıyla bu web sayfasını kurduk.
+                        </p>
+                    </div>
+                    <img src="kopekuclu.jpg" alt="kopekler">
+                </div>
+
+                
+                <div class="bizkimiz" style="text-align: center; padding-top: 50px;">
+                    <h1>Biz Kimiz?</h1>
+                    <div class="bizkimiz_style">
+                        <div>
+                            <img src="fuku.jpg" alt="fukununfotosu" style="width: 295px; height: 410px;">
+                            <p>Furkan Can Çığrıkcı</p>
+                            <p>Co-Founder</p>
+                        </div>
+                        <div>
+                            <img src="su.jpg" alt="sununfotosu" style="width: 295px; height: 410px;">
+                            <p>Ekin Su İşbilir</p>
+                            <p>Co-Founder</p>
+                        </div>
+                        <div>
+                            <img src="beyz.jpg" alt="beyzanınfotosu" style="width: 295px; height: 410px;">
+                            <p>Beyza Küçüksubaşı</p>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contactform">
+                    <div style="text-align:center">
+                      <h2>Animal Love</h2>
+                      <p>ile iletişime geçin.</p>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="logo.png">
+                      </div>
+                      <div class="column">
+                        <form action="/action_page.php">
+                          <label for="isim"></label>
+                          <input type="text" id="isim" name="" placeholder="İsim - Soyisim">
+                          <label for="eposta"></label>
+                          <input type="text" id="eposta" name="eposta" placeholder="E-Posta">
+                          <label for="hayvan"></label>
+                          <select id="hayvan" name="hayvan">
+                            <option value="köpek">Köpek</option>
+                            <option value="kedi">Kedi (Yakında)</option>
+                            <option value="kuş">Kuş (Yakında)</option>
+                          </select>
+                          <label for="subject">Yorum</label>
+                          <textarea id="subject" name="subject" placeholder="Mesajınızı buraya yazınız..." style="height:110px"></textarea>
+                          <input type="submit" value="Gönder">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+    <footer class="main-footer">
+        <p class="footer_entity">2020 senesinde Fuku, Su, Beyza iş birliğinde gönüllülük doğrultusunda yapılmıştır.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="twitter.svg" alt="twitterlogo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="instagram.svg" alt="instagramlogo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="youtube.svg" alt="youtubelogo">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>    
+</body>
+</html>
