@@ -15,7 +15,7 @@ body {
 }
 
 .brand-logo img {
-    width: 80%;
+    width: 100%;
 }
 
 .main-nav ul,
@@ -73,7 +73,6 @@ ul.slides {
 
 .slide-image img {
   width: auto;
-  min-width: 100%;
   height: 100%;
 }
 
@@ -157,7 +156,7 @@ span.next {
 .slogan {
   color: #e06972;
   font-size: 50px;
-  padding: 12px 45px 60px 130px;
+  padding: 5px 60px 60px 250px;
 }
 
 .hakkımızda {
@@ -165,7 +164,7 @@ span.next {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-top: 50px;
 }
 
@@ -178,15 +177,15 @@ span.next {
   padding: 0 4rem;
 }
 
-.hakkımızda-img {
-    height: 100%;
-    max-width: 100%;
+.hakkımızda-img img {
+    height: 100%;""
+    width: 100%;
 }
 
 .bizkimiz {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -200,8 +199,9 @@ span.next {
 }
 
 .bizkimiz_style div img {
-    width: 30vw;
+    width: 20vw;
     height: 50vh;
+    border-radius: 5%;
 }
 
 /* Footer Contact Form */
@@ -235,6 +235,10 @@ input[type="submit"]:hover {
   margin: 40px;
 }
 
+.contactform-heading {
+  text-align: center;
+}
+
 /* Create two columns that float next to eachother */
 .column {
   float: left;
@@ -253,16 +257,22 @@ input[type="submit"]:hover {
 
 /* Responsiveness */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .carouselPart {
         display: flex;
         flex-direction: column;
         padding-left: 0px;
         padding-right: 0px;
+        align-items: center;
       }
 
-    .hakkımızda {
+      .slogan {
+        padding: 0 0 2rem 0;
+      }
+
+    .hakkımızda, .main-header, .main-nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     .bizkimiz div {
@@ -276,4 +286,17 @@ input[type="submit"]:hover {
         width: 50vw;
         height: 50vh;
     }
+
+    .hakkımızda-img img {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+  .column img {
+    display: none;
+  }
+  .column {
+    width: 100%;
+  }
 }
